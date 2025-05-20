@@ -1,0 +1,44 @@
+// Variablen
+$accent-color: rgba(225, 85, 68, 1);
+
+.scroll-arrow {
+  position: absolute;
+  width: 22px;
+  height: 50px;
+  top: 306px;
+  left: 669px;
+  transform: rotate(360deg);
+  cursor: pointer;
+  
+  svg {
+    width: 22px;
+    height: 50px;
+    path {
+      stroke: $accent-color;
+    }
+  }
+  
+  // Animation beim Hover
+  &:hover {
+    svg path {
+      stroke-width: 3;
+    }
+  }
+  
+  // Animation beim Klicken
+  &:active {
+    animation: arrowClick 300ms ease-out forwards;
+  }
+}
+
+@keyframes arrowClick {
+  0% {
+    transform: rotate(180deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(180deg) scale(1);
+  }
+}

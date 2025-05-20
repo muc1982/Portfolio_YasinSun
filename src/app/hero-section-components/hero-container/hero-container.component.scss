@@ -1,0 +1,25 @@
+// Variablen
+$primary-color: #0B042D;
+
+.hero-section {
+  width: 1337px;
+  height: 554px;
+  margin-top: 2px;
+  margin-left: -53px;
+  position: relative;
+  background-color: $primary-color;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 140px;
+}

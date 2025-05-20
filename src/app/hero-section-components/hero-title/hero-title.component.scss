@@ -1,0 +1,21 @@
+$cyan-color: #00FFC2;
+
+.hero-title {
+  .profession {
+    color: $cyan-color;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  
+  .name {
+    color: $cyan-color;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
