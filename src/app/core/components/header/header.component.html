@@ -1,0 +1,18 @@
+<header class="header">
+  <div class="logo">
+    <a href="/" class="logo-text">&lt;MS&gt;</a>
+  </div>
+  <nav class="navigation">
+    <ul>
+      <li><a (click)="scrollToSection('why-me-section')">Why me</a></li>
+      <li><a (click)="scrollToSection('skills-section')">Skills</a></li>
+      <li><a (click)="scrollToSection('projects-section')">Projects</a></li>
+      <li><a (click)="scrollToSection('contact-section')">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="language-switcher">
+    <div class="language-text" [class.active]="currentLanguage === 'de'" (click)="switchLanguage('de')">DE</div>
+    <div class="language-separator">|</div>
+    <div class="language-text" [class.active]="currentLanguage === 'en'" (click)="switchLanguage('en')">EN</div>
+  </div>
+</header>

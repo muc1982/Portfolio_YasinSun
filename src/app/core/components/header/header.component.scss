@@ -1,0 +1,135 @@
+// Variables
+$primary-color: #0B042D;
+$accent-color: rgba(225, 85, 68, 1);
+$white: #ffffff;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 92px;
+  padding: 24px 140px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, $primary-color 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  &-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93.96px;
+    height: 28.33px;
+    margin-top: 1px;
+    color: $accent-color;
+    font-family: 'Handjet', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.navigation {
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 44px;
+    color: $white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      color: $accent-color;
+    }
+
+    // Animation bei Klick (gemäß Image 2)
+    &:active {
+      animation: menuClick 300ms ease-out forwards;
+    }
+  }
+}
+
+@keyframes menuClick {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  height: 25px; // Höhe entsprechend Image 1 und 2
+  width: max-content; // Hug-Layout
+  gap: 6px; // Abstand für das Separator-Element
+}
+
+.language-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px; // Breite laut Image 2
+  height: 25px; // Höhe laut Image 2
+  color: $white;
+  font-family: 'Roboto Mono', monospace; // Font laut Image 2
+  font-weight: 700; // Weight laut Image 2
+  font-size: 18px; // Größe laut Image 2
+  line-height: 140%; // Zeilenhöhe laut Image 2
+  letter-spacing: 0%; // Buchstabenabstand laut Image 2
+  cursor: pointer;
+  transition: color 0.3s;
+  
+  &:hover,
+  &.active {
+    color: $accent-color;
+  }
+}
+
+.language-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6px; // Breite laut Image 3
+  height: 22px; // Höhe laut Image 3
+  color: $accent-color; // Farbe Version 1/Red
+  font-family: 'Poppins', sans-serif; // Font laut Image 3
+  font-weight: 400; // Weight laut Image 3
+  font-size: 18px; // Größe laut Image 3
+  line-height: 120%; // Zeilenhöhe laut Image 3
+  letter-spacing: 0%; // Buchstabenabstand laut Image 3
+}
