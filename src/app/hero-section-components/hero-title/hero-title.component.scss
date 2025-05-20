@@ -1,21 +1,29 @@
+// Variablen
 $cyan-color: #00FFC2;
 
 .hero-title {
+  position: absolute;
+  bottom: 20px; // Reduziere den Abstand vom Boden, um es weiter nach unten zu setzen
+  left: 112px;
+  z-index: 1;
+  
   .profession {
     color: $cyan-color;
     font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
+    font-size: 54px;
     font-weight: 700;
-    margin: 0;
-    margin-bottom: 16px;
+    margin: 0; // Entferne alle Margins
+    padding: 0; // Entferne alle Paddings
+    line-height: 2.2; // Reduziere den Zeilenabstand
   }
   
   .name {
     color: $cyan-color;
     font-family: 'Roboto Mono', monospace;
-    font-size: 48px;
+    font-size: 82px;
     font-weight: 700;
-    margin: 0;
-    margin-bottom: 32px;
+    margin: 0; // Entferne alle Margins
+    padding: 0; // Entferne alle Paddings
+    line-height: 0.4; // Reduziere den Zeilenabstand
   }
 }

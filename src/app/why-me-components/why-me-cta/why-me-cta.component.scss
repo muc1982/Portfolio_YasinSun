@@ -1,0 +1,24 @@
+$cyan-color: #00FFC2;
+
+.cta-container {
+  margin-top: 30px;
+}
+
+.cta-button {
+  background-color: $cyan-color;
+  color: #0B042D;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: darken($cyan-color, 10%);
+  }
+  
+  &:active {
+    transform: scale(0.98);
+  }
+}

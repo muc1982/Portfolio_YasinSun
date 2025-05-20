@@ -1,0 +1,137 @@
+// Variablen
+$accent-color: rgba(225, 85, 68, 1); // Orange Farbe für "am" und Pfeile
+$green-color: rgba(2, 244, 191, 1);
+$primary-bg: #0B042D; // Dunkler Hintergrund
+
+.intro-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 350px;
+  margin-top: 60px;
+  padding-left: 30px;
+}
+
+// Container 1: I am / Located in Munich
+.intro-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.i-am-text {
+  display: flex;
+  align-items: baseline;
+  margin-right: 150px; // Abstand zwischen "I am" und "located in Munich"
+  
+  .i-text {
+    color: $accent-color;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 54px;
+    font-weight: 700;
+    margin-right: 20px;
+  }
+  
+  .am-text {
+    color: $accent-color;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 54px;
+    font-weight: 400;
+  }
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  
+  .location-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  
+  .location-text {
+    display: flex;
+    flex-direction: column;
+    
+    .text-primary, .text-secondary {
+      color: $green-color;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 20px;
+    }
+  }
+}
+
+// Container 2: Open to relocate
+.relocate-row {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 120px; // Position von Container 2 (anpassen nach Bedarf)
+  right: 200px; // Position von Container 2 (anpassen nach Bedarf)
+  
+  .relocate-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  
+  .relocate-text {
+    display: flex;
+    flex-direction: column;
+    
+    .text-primary, .text-secondary {
+      color: $green-color;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 20px;
+    }
+  }
+}
+
+// Container 3: Open to work remote
+.remote-row {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 220px; // Position von Container 3 (anpassen nach Bedarf)
+  left: 200px; // Position von Container 3 (anpassen nach Bedarf)
+  
+  .remote-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  
+  .remote-text {
+    display: flex;
+    flex-direction: column;
+    
+    .text-primary, .text-secondary {
+      color: $green-color;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 20px;
+    }
+  }
+}
+
+// Arrows
+.arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  
+  &.arrow-1 {
+    top: 80px;
+    left: 120px;
+  }
+  
+  &.arrow-2 {
+    top: 170px;
+    right: 100px;
+  }
+  
+  &.arrow-3 {
+    top: 270px;
+    right: 50px;
+  }
+}

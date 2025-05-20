@@ -1,0 +1,39 @@
+$accent-color: rgba(225, 85, 68, 1);
+$green-color: rgba(2, 244, 191, 1);
+
+.description-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  width: 685px;
+  margin-left: 42px;
+}
+
+.title {
+  color: $accent-color;
+  font-size: 54px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: right;
+  width: 100%; 
+  padding: 0;
+  margin-top: 0;
+}
+
+.text {
+    width: 100%;
+    height: auto;
+    color: rgb(2, 244, 191);
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: right;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}

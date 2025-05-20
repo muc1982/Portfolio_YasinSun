@@ -1,50 +1,51 @@
-// Variablen
 $accent-color: rgba(225, 85, 68, 1);
 $green-color: rgba(2, 244, 191, 1);
 
 .contact-button-container {
+  position: absolute;
   width: 169px;
   height: 52px;
-  position: relative;
-  top: 286px;
-  left: 50px;
-  transform: rotate(270deg); // Entspricht 90° + Spiegelung
-  display: flex;
-  gap: 10px;
+  top: 296px;
+  transform: rotate(270deg);
+  transform-origin: left top;
+  left: 112px;
 }
 
 .contact-button {
   width: 169px;
   height: 52px;
-  padding: 15px 30px;
   background: transparent;
-  border: 1px solid $green-color; // Version 1/Green
+  border: 1px solid $accent-color;
   cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.3s ease-out;
   
   &:hover {
     background-color: rgba(2, 244, 191, 0.1);
+    border: 1px solid $green-color; 
+    
+    .button-text {
+      color: $green-color; 
+    }
   }
   
-  // Animation beim Klicken
   &:active {
     animation: buttonClick 300ms ease-out forwards;
   }
 }
 
 .button-text {
-  width: 109px;
-  height: 22px;
-  color: $accent-color; // Version 1/Red
+  color: $accent-color;
   font-family: 'Roboto Mono', monospace;
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(0deg); // Um die Rotation des Containers auszugleichen
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: color 0.3s ease; 
 }
 
 @keyframes buttonClick {
